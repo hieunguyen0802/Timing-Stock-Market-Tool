@@ -6,4 +6,5 @@
 4. Your extension will be uploaded quickly then you can start using
 5. Please look up for the company code on Stock Market then input
 6. Enjoy !
+7. Max profit using an algorithm to figure out max profixt
 
