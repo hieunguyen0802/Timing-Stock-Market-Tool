@@ -1,0 +1,11 @@
+{
+    "name": "Timing Stock Price Tool",
+    "version": "1.0.0",
+    "description": "tool to find out max / min and max profit of company within 90 days",
+    "manifest_version": 3,
+    "author": "Hieu Nguyen",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "Timing Stock Price"
+    }
+}

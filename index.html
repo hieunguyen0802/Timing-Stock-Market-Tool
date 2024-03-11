@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Price Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <section class="py-1">
+        <div class="container px-lg-3" style="width: 470px;">
+            <div class="p-1 p-lg-3 bg-light rounded-3 text-center">
+                <div class="m-1 m-lg-3">
+                    <h1 class="fw-bold "> &#128336; Timing Stock Price Tool &#x2705;</h1>
+                    <p class="fw-bold m-1 mx-auto alert alert-warning"> start by input the company code below, the tool will help finding the max / min stock price and the <u> max profit </u> within 90 days </p>
+                    <p class="m-1 mx-auto "><small><i>*max profit: choosing a <b>single day</b> to buy one stock and choosing a <b>different day in the future </b> to sell that stock. </i></small> </p>
+                    <form class="m-2" id="companyForm" action="">
+                        <input type="text" class="w-25 form-control m-1 mx-auto" id="companyCode" placeholder="company code" required>
+                        <button  type="submit" class="btn btn-danger btn-md m-1" id="searchBtn"> Search <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                          </svg></button>
+                    </form>
+                </div>
+            </div>
+            <table class="table mx-auto">
+                <thead>
+                  <tr>
+                    <th>Max price ($) &#128200;</th>
+                    <th>Min price ($) &#128201; </th>
+                    <th>Max Profit ($) &#129351;</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="alert alert-success" id="max">no data yet... </td>
+                    <td class="alert alert-primary" id="min">no data yet...</td>
+                    <td class="alert alert-info" id="profit">no data yet...</td>
+                  </tr>
+                </tbody>
+              </table>
+
+        </div>
+    </section>
+</body>
+<script src="scripts.js"></script>
+</html>
